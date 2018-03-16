@@ -7,7 +7,7 @@
       </div>
       <table>
         <tr>
-          <td>Title</td>
+          <td>Name</td>
           <td width="550">Description</td>
           <td width="100" align="center">Action</td>
         </tr>
@@ -15,7 +15,7 @@
           <td>{{ task.name }}</td>
           <td>{{ task.description }}</td>
           <td align="center">
-            <router-link v-bind:to="{ name: 'EditTask', params: { id: post._id } }">Edit</router-link> |
+            <router-link v-bind:to="{ name: 'EditTask', params: { id: task._id } }">Edit</router-link> |
             <a href="#">Delete</a>
           </td>
         </tr>
